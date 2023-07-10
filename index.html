@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script src="gauth.js"></script>
+    <link rel="stylesheet" href="gauth.css" />
+</head>
+<body>
+
+
+<div>
+    <!-- configuracoes do google -->
+    <div id="g_id_onload"
+        data-client_id="{{CHAVE-DO-GOOGLE}}"
+        data-context="signin"
+        data-ux_mode="popup"
+        data-callback="loginCallback"
+        data-auto_prompt="false">
+    </div>
+
+    <!-- botao de login -->
+    <div class="g_id_signin"
+        data-type="standard"
+        data-shape="rectangular"
+        data-theme="outline"
+        data-text="signin_with"
+        data-size="large"
+        data-logo_alignment="left">
+    </div>
+    <!-- local onde ira aparecer as informacoes do usuario -->
+    <div class="g_id_logado"></div>
+</div>
+    
+</body>
+</html>
